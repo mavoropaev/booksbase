@@ -17,7 +17,7 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationEn
 
 @Configuration
 @RequiredArgsConstructor
-public class фвв {
+public class SecurityConfiguration {
 
     private final CustomUserDetailsService userDetailsService;
 
