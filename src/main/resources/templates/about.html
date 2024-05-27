@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>About</title>
+</head>
+<body>
+<h1>About</h1>
+<div th:if="${username}">
+  <p>Username: <span th:text="${username}"></span></p>
+  <p>Role: <span th:text="${role}"></span></p>
+</div>
+<div th:if="${message}">
+  <p th:text="${message}"></p>
+</div>
+</body>
+</html>

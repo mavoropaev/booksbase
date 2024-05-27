@@ -1,0 +1,40 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="01-insert-row"
+               id="2024-05-26:01-insert-row" author="voropaev">
+
+        <insert tableName="users">
+            <column name="username" value="admin"/>
+            <column name="password" value="$2a$10$UAda4gfXG4Uvot2xPqLncOjy.Z2hNlJ/46roFhtUaL.2QD9/0kvFO"/>
+            <column name="role" value="ADMIN"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="username" value="user"/>
+            <column name="password" value="$2a$10$QyMZY/KaFdS0wHlMoBry2uluxIv6MrTDtf2Vu7/PeRHXxmyMT.EGS"/>
+            <column name="role" value="USER"/>
+        </insert>
+
+        <insert tableName="authors">
+            <column name="name" value="Ильф"/>
+        </insert>
+        <insert tableName="authors">
+            <column name="name" value="Петров"/>
+        </insert>
+        <insert tableName="authors">
+            <column name="name" value="Толстой"/>
+        </insert>
+
+        <insert tableName="books">
+            <column name="title" value="12 Стульев"/>
+            <column name="author_id" value="1"/>
+        </insert>
+        <insert tableName="books">
+            <column name="title" value="Война и Мир"/>
+            <column name="author_id" value="3"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
