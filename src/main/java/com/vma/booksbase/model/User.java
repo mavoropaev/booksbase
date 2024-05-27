@@ -18,6 +18,10 @@ public class User {
 
     @Column(name = "username", nullable = false)
     private String userName;
+
+    @Column(name = "password", nullable = false)
     private String password;
+
+    @Column(name = "role", nullable = false)
     private String role;
 }

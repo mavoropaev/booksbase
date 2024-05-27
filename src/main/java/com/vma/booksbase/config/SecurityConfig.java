@@ -17,8 +17,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @RequiredArgsConstructor
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-//    private final DataSource dataSource;
-
     private final CustomUserDetailsService userDetailsService;
 
     @Override
